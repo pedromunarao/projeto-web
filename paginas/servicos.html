@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Visualizer | Serviços</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/servicos.css">
+    <link rel="stylesheet" href="../css/formCep.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../imagens/logo_sfundo.png" alt="CV logo">
+        </a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="portifolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre Nós</a>
+        </nav>
+        <button class="toggle-button" onclick="toggleScheme()"><img src="../imagens/5262027.png" alt=""></button>
+    </header>
+    <main>
+        <div class="quais-servicos">
+            <h2 class="tituloMP">Quais serviços fazemos</h2>
+            <article class="paragraph01">A Creative Vizualizer é especializada em envelopamento automotivo
+                premium, transformando veículos com estilo, proteção e
+                exclusividade. Nossa missão é oferecer soluções personalizadas que
+                reflitam a identidade de nossos clientes, utilizando materiais de
+                alta qualidade que garantem durabilidade e um acabamento impecável.
+                Atendemos a diferentes tipos de veículos, sempre com atenção às
+                necessidades específicas e ao design desejado. Na Creative
+                Vizualizer, cada projeto é conduzido com precisão e cuidado, criando
+                resultados que unem sofisticação e funcionalidade, elevando o visual
+                do seu automóvel a um novo patamar.</article>
+            <ul>
+                <li>Envelopamento Total</li>
+                <li>Envelopamento Superficial</li>
+                <li>Envelopamento de Teto e Retrovisores</li>
+                <li>PPF Total</li>
+                <li>PPF Kit Frontal</li>
+                <li>Aplicação de fume nos faróis</li>
+            </ul>
+        </div>
+        <div class="container-servicos">
+            <section id="verificaCep">
+                <h1><strong>Veja se atendemos sua região!</strong></h1>
+                <form id="form-endereco">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" onblur="onCepBlur(event)" placeholder="Digite seu CEP">
+
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" onblur="onCepBlur(event)" placeholder="Digite seu endereco">
+
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" onblur="onCepBlur(event)" placeholder="Digite seu bairro">
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" onblur="onCepBlur(event)" placeholder="Digite sua cidade">
+
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" onblur="onCepBlur(event)" placeholder="Digite seu estado">
+
+                    <p id="mensagem" style="display: none; margin-top: 10px; font-weight: bold;"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="../imagens/logo_cv_small.png" alt="logo">
+            <p class="paragraph">Seu carro, sua identidade, nosso toque.</p>
+        </div>
+
+        <div>
+            <strong class="title">Links Rápidos</strong>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="./paginas/servicos.html">Serviços</a>
+                <a href="./paginas/portifolio.html">Portfólio</a>
+                <a href="./paginas/contato.html">Contato</a>
+                <a href="./paginas/sobre.html">Sobre Nós</a>
+            </div>
+        </div>
+
+        <div>
+            <strong class="title">Fale conosco</strong>
+            <p>WhatsApp: <a href="https://wa.me/5511998116279" target="_blank">(11) 9 9811-6279</a></p>
+            <p>Email: <a href="mailto:creativevisualizer@cv.com.br" target="_blank">creativevisualizer@cv.com.br</a></p>
+            <p>Address: Av. Example, nº40, Centro</p>
+        </div>
+    </footer>
+    <div class="copyright">
+        "Developed by Creative Visualizer Team."
+    </div>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
